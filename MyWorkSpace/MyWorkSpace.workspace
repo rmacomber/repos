@@ -2,16 +2,19 @@
 <CodeLite_Workspace Name="MyWorkSpace" Database="" Version="10000">
   <Project Name="Project1" Path="Project1/Project1.project" Active="Yes"/>
   <Project Name="Project2" Path="Project2/Project2.project"/>
+  <Project Name="Testtemplate" Path="Testtemplate/Testtemplate.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="Project1" ConfigName="Debug"/>
       <Project Name="Project2" ConfigName="Debug"/>
+      <Project Name="Testtemplate" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="Project1" ConfigName="Release"/>
       <Project Name="Project2" ConfigName="Release"/>
+      <Project Name="Testtemplate" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
