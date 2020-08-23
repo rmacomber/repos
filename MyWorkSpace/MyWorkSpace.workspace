@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="MyWorkSpace" Database="" Version="10000">
-  <Project Name="Project1" Path="Project1/Project1.project" Active="Yes"/>
-  <Project Name="Project2" Path="Project2/Project2.project"/>
+  <Project Name="carpetcleaningestimate" Path="Project1/Project1.project" Active="Yes"/>
+  <Project Name="Project2" Path="Project2/Project2.project" Active="No"/>
+  <Project Name="cmdarg" Path="cmdarg/cmdarg.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
-      <Project Name="Project1" ConfigName="Debug"/>
+      <Project Name="carpetcleaningestimate" ConfigName="Debug"/>
       <Project Name="Project2" ConfigName="Debug"/>
+      <Project Name="cmdarg" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
-      <Project Name="Project1" ConfigName="Release"/>
+      <Project Name="carpetcleaningestimate" ConfigName="Release"/>
       <Project Name="Project2" ConfigName="Release"/>
+      <Project Name="cmdarg" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
