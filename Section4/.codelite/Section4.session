@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <Session Name="C:\Users\ryanm\OneDrive\Documents\GitHub\repos\Section4\Section4.workspace">
   <int Value="0" Name="m_selectedTab"/>
   <wxString Value="C:\Users\ryanm\OneDrive\Documents\GitHub\repos\Section4\Section4.workspace" Name="m_workspaceName"/>
@@ -7,6 +8,16 @@
       <wxString Value="C:\Users\ryanm\OneDrive\Documents\GitHub\repos\Section4\FirstProgram\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="16" Name="CurrentLine"/>
+=======
+<Session Name="C:\Users\ryanm\Documents\GitHub\repos\Section4\Section4.workspace">
+  <int Value="0" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\ryanm\Documents\GitHub\repos\Section4\Section4.workspace" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="C:\Users\ryanm\Documents\GitHub\repos\Section4\FirstProgram\main.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="10" Name="CurrentLine"/>
+>>>>>>> f07a276080e179bb7c1b87acdb64302db531eb5e
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
