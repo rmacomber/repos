@@ -34,12 +34,11 @@ int main()
     double total_cost {small_room_cost + large_room_cost};
     cout << "Total cost: $" << total_cost << endl;
     
-//    double price_per_room_total {price_per_large_room + price_per_small_room};
-//    int number_of_rooms_total {number_of_large_rooms + number_of_small_rooms}
-//    ;
     double tax {total_cost * sales_tax};
-    cout << "Tax: $" << tax << endl; 
+    cout << "Tax: $" << tax << endl;
+    
     cout << "=========================================" << endl;
+    
     cout << "Total estimate: $" << total_cost + tax << endl;
     cout << "This estimate is valid for " << estimate_expriy << " days." << endl << endl;
     

@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ carpetcleaningestimate - Debug ]----------"
-	@cd "Project1" && "$(MAKE)" -f  "carpetcleaningestimate.mk"
+	@echo "----------Building project:[ textsearch - Debug ]----------"
+	@cd "textsearch" && "$(MAKE)" -f  "textsearch.mk"
 clean:
-	@echo "----------Cleaning project:[ carpetcleaningestimate - Debug ]----------"
-	@cd "Project1" && "$(MAKE)" -f  "carpetcleaningestimate.mk" clean
+	@echo "----------Cleaning project:[ textsearch - Debug ]----------"
+	@cd "textsearch" && "$(MAKE)" -f  "textsearch.mk" clean
