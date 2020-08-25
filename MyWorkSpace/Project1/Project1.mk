@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=Project1
 ConfigurationName      :=Debug
-WorkspacePath          :=C:/Users/ryanm/Documents/GitHub/repos/MyWorkSpace
-ProjectPath            :=C:/Users/ryanm/Documents/GitHub/repos/MyWorkSpace/Project1
+WorkspacePath          :=C:/Users/ryanm/OneDrive/Documents/GitHub/repos/MyWorkSpace
+ProjectPath            :=C:/Users/ryanm/OneDrive/Documents/GitHub/repos/MyWorkSpace/Project1
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/ryanm/Documents/GitHub/repos/MyWorkSpace/Project1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/ryanm/OneDrive/Documents/GitHub/repos/MyWorkSpace/Project1/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
