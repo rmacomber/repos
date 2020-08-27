@@ -1,9 +1,5 @@
 -IC:\Program
-<<<<<<< HEAD
 -IC:\Users\ryanm\OneDrive\Documents\GitHub\repos\MyWorkSpace\Project2
-=======
--IC:\Users\ryanm\Documents\GitHub\repos\MyWorkSpace\Project2
->>>>>>> f07a276080e179bb7c1b87acdb64302db531eb5e
 -I"C:\Program Files\mingw-w64\mingw64\lib\gcc\x86_64-w64-mingw32\8.1.0\include\c++"
 -I"C:\Program Files\mingw-w64\mingw64\lib\gcc\x86_64-w64-mingw32\8.1.0\include\c++\x86_64-w64-mingw32"
 -I"C:\Program Files\mingw-w64\mingw64\lib\gcc\x86_64-w64-mingw32\8.1.0\include\c++\backward"

@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ textsearch - Debug ]----------"
-	@cd "textsearch" && "$(MAKE)" -f  "textsearch.mk"
+	@echo "----------Building project:[ Vectors - Debug ]----------"
+	@cd "Vectors" && "$(MAKE)" -f  "Vectors.mk"
 clean:
-	@echo "----------Cleaning project:[ textsearch - Debug ]----------"
-	@cd "textsearch" && "$(MAKE)" -f  "textsearch.mk" clean
+	@echo "----------Cleaning project:[ Vectors - Debug ]----------"
+	@cd "Vectors" && "$(MAKE)" -f  "Vectors.mk" clean
