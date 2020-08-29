@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="Section8" Database="" Version="10.0.0">
   <Project Name="AssignmentOperator" Path="AssignmentOperator/AssignmentOperator.project" Active="No"/>
-  <Project Name="ArithmeticOperators" Path="ArithmeticOperators/ArithmeticOperators.project" Active="Yes"/>
+  <Project Name="ArithmeticOperators" Path="ArithmeticOperators/ArithmeticOperators.project" Active="No"/>
   <Project Name="Euros" Path="Euros/Euros.project" Active="No"/>
-  <Project Name="IncrementDecrementOperators" Path="IncrementDecrementOperators/IncrementDecrementOperators.project" Active="No"/>
+  <Project Name="IncrementDecrementOperators" Path="IncrementDecrementOperators/IncrementDecrementOperators.project" Active="Yes"/>
   <Project Name="MixedExpressions" Path="MixedExpressions/MixedExpressions.project" Active="No"/>
   <Project Name="EqualityOperators" Path="EqualityOperators/EqualityOperators.project" Active="No"/>
   <Project Name="RelationalOperators" Path="RelationalOperators/RelationalOperators.project" Active="No"/>
