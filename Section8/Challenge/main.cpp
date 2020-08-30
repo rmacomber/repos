@@ -39,7 +39,15 @@ using namespace std;
 
 int main() {
 
-    cout << endl;
+    string UserInput;
+    cout << "Enter an amount in cents : " << endl;
+    cin >> UserInput;
+    
+    const int dollar {100};
+    const int quarter {25};
+    const int dime {10};
+    const int nickel {5};
+    const int penny {1};
     return 0;
 }
 
