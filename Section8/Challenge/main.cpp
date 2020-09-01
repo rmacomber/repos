@@ -39,15 +39,37 @@ using namespace std;
 
 int main() {
 
-    string UserInput;
-    cout << "Enter an amount in cents : " << endl;
-    cin >> UserInput;
+    int user_input;
+    cout << "Enter an amount in cents : ";
+    cin >> user_input;
     
     const int dollar {100};
     const int quarter {25};
     const int dime {10};
     const int nickel {5};
     const int penny {1};
+    
+    int number_of_dollars{0}, number_of_quarters{0}, number_of_dimes{0}, number_of_nickels{0}, number_of_pennies{0};
+    
+    number_of_dollars = user_input / dollar;
+    
+    int dollar_amount = number_of_dollars * dollar;
+    
+    int left_over_input = user_input - dollar_amount;
+    
+    number_of_quarters = left_over_input / quarter;
+    
+     
+    
+    cout << "You can provide this change as follows: \n" << endl;
+    cout << "Dollars: "<< number_of_dollars << endl;
+    cout << "Quarters: " << number_of_quarters << endl;
+    cout << "Dimes: " << number_of_dimes << endl;
+    cout << "Nickels: " << number_of_nickels << endl;
+    cout << "Pennies: " << number_of_pennies << endl;
+
+    cout << number_of_dollars << endl;
+    cout << left_over_input << endl;
     return 0;
 }
 

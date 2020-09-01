@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ IncrementDecrementOperators - Debug ]----------"
-	@cd "IncrementDecrementOperators" && "$(MAKE)" -f  "IncrementDecrementOperators.mk"
+	@echo "----------Building project:[ Challenge - Debug ]----------"
+	@cd "Challenge" && "$(MAKE)" -f  "Challenge.mk"
 clean:
-	@echo "----------Cleaning project:[ IncrementDecrementOperators - Debug ]----------"
-	@cd "IncrementDecrementOperators" && "$(MAKE)" -f  "IncrementDecrementOperators.mk" clean
+	@echo "----------Cleaning project:[ Challenge - Debug ]----------"
+	@cd "Challenge" && "$(MAKE)" -f  "Challenge.mk" clean
