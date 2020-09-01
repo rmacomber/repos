@@ -40,7 +40,7 @@ using namespace std;
 int main() {
 
     int user_input;
-    cout << "Enter an amount in cents : ";
+    cout << "Enter an amount in cents: ";
     cin >> user_input;
     
     const int dollar {100};
