@@ -51,15 +51,31 @@ int main() {
     
     int number_of_dollars{0}, number_of_quarters{0}, number_of_dimes{0}, number_of_nickels{0}, number_of_pennies{0};
     
+    //dollars
     number_of_dollars = user_input / dollar;
-    
     int dollar_amount = number_of_dollars * dollar;
-    
     int left_over_input = user_input - dollar_amount;
     
+    //quarters
     number_of_quarters = left_over_input / quarter;
+    int quarter_amount = number_of_quarters * quarter;
+    left_over_input -= quarter_amount;
     
-     
+    
+    //dimes
+//    number_of_quarters = left_over_input / quarter;
+//    int quarter_amount = number_of_quarters * quarter;
+//    left_over_input -= quarter_amount;
+    
+//    //nickles
+//    number_of_quarters = left_over_input / quarter;
+//    int quarter_amount = number_of_quarters * quarter;
+//    left_over_input -= quarter_amount;
+
+    //pennies
+//    number_of_quarters = left_over_input / quarter;
+//    int quarter_amount = number_of_quarters * quarter;
+//    left_over_input -= quarter_amount;
     
     cout << "You can provide this change as follows: \n" << endl;
     cout << "Dollars: "<< number_of_dollars << endl;
