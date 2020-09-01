@@ -83,6 +83,7 @@ int main() {
     cout << "Dimes: " << number_of_dimes << endl;
     cout << "Nickels: " << number_of_nickels << endl;
     cout << "Pennies: " << number_of_pennies << endl;
+    cout << endl;
 
     return 0;
 }
