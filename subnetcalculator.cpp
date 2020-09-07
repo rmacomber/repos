@@ -23,16 +23,14 @@ int main ()
 	cout << "IP address: " << ip_octet1 << "."<<ip_octet2<<"."<<ip_octet3<<"."<<ip_octet4<<endl;
 	cout << "Subnet: " << sub_octet1 << "."<< sub_octet2 << "." << sub_octet3 << "."<< sub_octet4 << endl;
 	
-	//we will need a if statement to find the subnet class - a, b, c, d
-	//we can use the subnet class for the block size calculation and to find the slash notation 
-	
 	//int class_a{}, class_b{}, class_c{}, class_d{};
-	int first_ip{}, last_ip{}, broadcast_address{}, blocksize{};
+	int first_ip{}, last_ip{}, broadcast_address{}, blocksize{}; network_address{};
 	
 	if(sub_octet4 == 255)
 		blocksize = 256 - 255;
 	else if (sub_octet3 == 255){
 		blocksize = 256 - sub_octet4;
+		//*****network_address = ip_octet4 % blocksize - 256;
 	}
 	else if(sub_octet2 == 255){
 		blocksize = 256 - sub_octet3;
