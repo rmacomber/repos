@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\ryanm\OneDrive\Documents\GitHub\repos\MyWorkSpace\MyWorkSpace.workspace">
+<Session Name="C:\Users\ryanm\Documents\GitHub\repos\MyWorkSpace\MyWorkSpace.workspace">
   <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\ryanm\OneDrive\Documents\GitHub\repos\MyWorkSpace\MyWorkSpace.workspace" Name="m_workspaceName"/>
+  <wxString Value="C:\Users\ryanm\Documents\GitHub\repos\MyWorkSpace\MyWorkSpace.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\ryanm\OneDrive\Documents\GitHub\repos\MyWorkSpace\Vectors\main.cpp" Name="FileName"/>
-      <int Value="5" Name="FirstVisibleLine"/>
-      <int Value="37" Name="CurrentLine"/>
+      <wxString Value="C:\Users\ryanm\Documents\GitHub\repos\MyWorkSpace\CreditCalculator\main.cpp" Name="FileName"/>
+      <int Value="10" Name="FirstVisibleLine"/>
+      <int Value="15" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
