@@ -3,18 +3,21 @@
   <Project Name="carpetcleaningestimate" Path="Project1/Project1.project" Active="No"/>
   <Project Name="textsearch" Path="textsearch/textsearch.project" Active="No"/>
   <Project Name="Vectors" Path="Vectors/Vectors.project" Active="Yes"/>
+  <Project Name="fuckaround" Path="fuckaround/fuckaround.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="carpetcleaningestimate" ConfigName="Debug"/>
       <Project Name="textsearch" ConfigName="Debug"/>
       <Project Name="Vectors" ConfigName="Debug"/>
+      <Project Name="fuckaround" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="carpetcleaningestimate" ConfigName="Release"/>
       <Project Name="textsearch" ConfigName="Release"/>
       <Project Name="Vectors" ConfigName="Release"/>
+      <Project Name="fuckaround" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
