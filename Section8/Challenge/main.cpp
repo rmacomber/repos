@@ -39,7 +39,52 @@ using namespace std;
 
 int main() {
 
+    int user_input;
+    cout << "Enter an amount in cents: ";
+    cin >> user_input;
+    
+    const int dollar {100};
+    const int quarter {25};
+    const int dime {10};
+    const int nickel {5};
+    const int penny {1};
+    
+    int number_of_dollars{0}, number_of_quarters{0}, number_of_dimes{0}, number_of_nickels{0}, number_of_pennies{0};
+    
+    //dollars
+    number_of_dollars = user_input / dollar;
+    int dollar_amount = number_of_dollars * dollar;
+    int left_over_input = user_input - dollar_amount;
+    
+    //quarters
+    number_of_quarters = left_over_input / quarter;
+    int quarter_amount = number_of_quarters * quarter;
+    left_over_input -= quarter_amount;
+    
+    
+    //dimes
+    number_of_dimes = left_over_input / dime;
+    int dimes_amount = number_of_dimes * dime;
+    left_over_input -= dimes_amount;
+    
+    //nickels
+    number_of_nickels = left_over_input / nickel;
+    int nickels_amount = number_of_nickels * nickel;
+    left_over_input -= nickels_amount;
+
+    //pennies
+    number_of_pennies = left_over_input / penny;
+    int pennies_amount = number_of_pennies * penny;
+    left_over_input -= pennies_amount;
+    
+    cout << "You can provide this change as follows: \n" << endl;
+    cout << "Dollars: "<< number_of_dollars << endl;
+    cout << "Quarters: " << number_of_quarters << endl;
+    cout << "Dimes: " << number_of_dimes << endl;
+    cout << "Nickels: " << number_of_nickels << endl;
+    cout << "Pennies: " << number_of_pennies << endl;
     cout << endl;
+
     return 0;
 }
 

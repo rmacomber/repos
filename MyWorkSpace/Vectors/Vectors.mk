@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=Vectors
 ConfigurationName      :=Debug
-WorkspacePath          :=C:/Users/ryanm/OneDrive/Documents/GitHub/repos/MyWorkSpace
-ProjectPath            :=C:/Users/ryanm/OneDrive/Documents/GitHub/repos/MyWorkSpace/Vectors
+WorkspacePath          :=C:/Users/ryanm/Documents/GitHub/repos/MyWorkSpace
+ProjectPath            :=C:/Users/ryanm/Documents/GitHub/repos/MyWorkSpace/Vectors
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=ryanm
-Date                   :=26/08/2020
+Date                   :=01/09/2020
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :="C:/Program Files/mingw-w64/mingw64/bin/g++.exe"
 SharedObjectLinkerName :="C:/Program Files/mingw-w64/mingw64/bin/g++.exe" -shared -fPIC
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/ryanm/OneDrive/Documents/GitHub/repos/MyWorkSpace/Vectors/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/ryanm/Documents/GitHub/repos/MyWorkSpace/Vectors/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
