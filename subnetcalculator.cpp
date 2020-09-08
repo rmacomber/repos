@@ -30,11 +30,8 @@ int main ()
 		blocksize = 256 - 255;
 	else if (sub_octet3 == 255){
 		blocksize = 256 - sub_octet4;
-		//cout << blocksize << endl;
 		network_address = ip_octet4 - (ip_octet4 % blocksize);
-		//cout << network_address << endl;
-		//network_address = 256 - (ip_octet4 % blocksize);
-		broadcast_address = network_address + blocksize;
+		broadcast_address = network_address + blocksize - 1;
 		first_ip = network_address + 1;
 		last_ip = broadcast_address - 1;
 		cout << "The network address: " << ip_octet1 << "." << ip_octet2 << "." << ip_octet3 << "." << network_address << endl;
