@@ -24,13 +24,23 @@ int main ()
 	cout << "Subnet: " << sub_octet1 << "."<< sub_octet2 << "." << sub_octet3 << "."<< sub_octet4 << endl;
 	
 	//int class_a{}, class_b{}, class_c{}, class_d{};
-	int first_ip{}, last_ip{}, broadcast_address{}, blocksize{}; network_address{};
+	int first_ip{}, last_ip{}, broadcast_address{}, blocksize{}, network_address{};
 	
 	if(sub_octet4 == 255)
 		blocksize = 256 - 255;
 	else if (sub_octet3 == 255){
 		blocksize = 256 - sub_octet4;
-		//*****network_address = ip_octet4 % blocksize - 256;
+		//cout << blocksize << endl;
+		network_address = ip_octet4 - (ip_octet4 % blocksize);
+		//cout << network_address << endl;
+		//network_address = 256 - (ip_octet4 % blocksize);
+		broadcast_address = network_address + blocksize;
+		first_ip = network_address + 1;
+		last_ip = broadcast_address - 1;
+		cout << "The network address: " << ip_octet1 << "." << ip_octet2 << "." << ip_octet3 << "." << network_address << endl;
+		cout << "The broadcast address: " << ip_octet1 << "." << ip_octet2 << "." << ip_octet3 << "." << broadcast_address << endl;
+		cout << "The first usable ip: " << ip_octet1 << "." << ip_octet2 << "." << ip_octet3 << "." << first_ip << endl;
+		cout << "The last usable ip: " << ip_octet1 << "." << ip_octet2 << "." << ip_octet3 << "." << last_ip << endl;
 	}
 	else if(sub_octet2 == 255){
 		blocksize = 256 - sub_octet3;
