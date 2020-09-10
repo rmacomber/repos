@@ -23,7 +23,6 @@ int main ()
 	cout << "IP address: " << ip_octet1 << "."<<ip_octet2<<"."<<ip_octet3<<"."<<ip_octet4<<endl;
 	cout << "Subnet: " << sub_octet1 << "."<< sub_octet2 << "." << sub_octet3 << "."<< sub_octet4 << endl;
 	
-	//int class_a{}, class_b{}, class_c{}, class_d{};
 	int first_ip{}, last_ip{}, broadcast_address{}, blocksize{}, network_address{};
 	
 	if(sub_octet4 == 255)
@@ -41,6 +40,14 @@ int main ()
 	}
 	else if(sub_octet2 == 255){
 		blocksize = 256 - sub_octet3;
+		network_address = ip_octet3 - (ip_octet3 % blocksize);
+		broadcast_address = network_address + blocksize - 1;
+		first_ip = network_address + 1;
+		last_ip = broadcast_address - 1;
+		cout << "The network address: " << ip_octet1 << "." << ip_octet2 << "." << network_address << "." << 0 << endl;
+		cout << "The broadcast address: " << ip_octet1 << "." << ip_octet2 << "."<< broadcast_address << "." << 255 << endl;
+		cout << "The first usable ip: " << ip_octet1 << "." << ip_octet2 << "." << first_ip << "." << 1 << endl;
+		cout << "The last usable ip: " << ip_octet1 << "." << ip_octet2 << "." << last_ip << "." << 254 << endl;
 	}
 	else if(sub_octet1 == 255){
 		blocksize = 256 - sub_octet2;
@@ -48,13 +55,15 @@ int main ()
 	else
 		blocksize = 256 - sub_octet1;
 	
-	int usable_ips = blocksize - 2;
+	//int usable_ips = 2 to the power of (32 - slashnotation) ;
+	//http://www.cplusplus.com/reference/cmath/pow/
 	
 	cout << "The block size is: " << blocksize << endl;
-	cout << "Number of usable IP addresses: " << usable_ips << endl;
+	//cout << "Number of usable IP addresses: " << usable_ips << endl;
 	
 	
 	//slash notation calculation
+	
 	
 	//we will need a statment to subtract the left over subnet from the same ip octet to get the block size
 	
