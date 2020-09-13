@@ -51,6 +51,14 @@ int main ()
 	}
 	else if(sub_octet1 == 255){
 		blocksize = 256 - sub_octet2;
+		network_address = ip_octet2 - (ip_octet2 % blocksize);
+		broadcast_address = network_address + blocksize - 1;
+		first_ip = network_address + 1;
+		last_ip = broadcast_address - 1;
+		cout << "The network address: " << ip_octet1 << "." << network_address << "." << ip_octet3 << "." << 0 << endl;
+		cout << "The broadcast address: " << ip_octet1 << "." << broadcast_address << "." << ip_octet3 << "." << 255 << endl;
+		cout << "The first usable ip: " << ip_octet1 << "." << first_ip << "." << ip_octet3 << "." << 1 << endl;
+		cout << "The last usable ip: " << ip_octet1 << "." << last_ip << "." << ip_octet3 << "."  << 254 << endl;
 	}
 	else
 		blocksize = 256 - sub_octet1;
