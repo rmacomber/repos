@@ -71,6 +71,7 @@ int main ()
 	
 	
 	//slash notation calculation
+	//swtch statment - http://www.controltechnology.com/Files/common-documents/application_notes/CIDR-Notation-Tutorial
 	
 	
 	//we will need a statment to subtract the left over subnet from the same ip octet to get the block size
