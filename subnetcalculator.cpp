@@ -1,4 +1,5 @@
 //subnet calculator
+//https://subnettingpractice.com/calc.html
 
 #include <iostream>
 
@@ -12,12 +13,12 @@ int main ()
 	
 	//IP Address
 	int ip_octet1{}, ip_octet2{}, ip_octet3{}, ip_octet4{};
-	cout << "Please enter the IP Address seperated by spaces: ";
+	cout << "Please enter the IP Address seperated by spaces (example: 192 168 0 1): ";
 	cin >> ip_octet1 >> ip_octet2 >> ip_octet3 >> ip_octet4;
 	
 	//Subnet
 	int sub_octet1{}, sub_octet2{}, sub_octet3{}, sub_octet4{};
-	cout << "Please enter the subent seperated by spaces: ";
+	cout << "Please enter the subent seperated by spaces (example: 255 255 255 0): ";
 	cin >> sub_octet1 >> sub_octet2 >> sub_octet3 >> sub_octet4;
 	
 	cout << "IP address: " << ip_octet1 << "."<<ip_octet2<<"."<<ip_octet3<<"."<<ip_octet4<<endl;
@@ -42,8 +43,8 @@ int main ()
 		blocksize = 256 - sub_octet3;
 		network_address = ip_octet3 - (ip_octet3 % blocksize);
 		broadcast_address = network_address + blocksize - 1;
-		first_ip = network_address + 1;
-		last_ip = broadcast_address - 1;
+		first_ip = network_address;
+		last_ip = broadcast_address;
 		cout << "The network address: " << ip_octet1 << "." << ip_octet2 << "." << network_address << "." << 0 << endl;
 		cout << "The broadcast address: " << ip_octet1 << "." << ip_octet2 << "."<< broadcast_address << "." << 255 << endl;
 		cout << "The first usable ip: " << ip_octet1 << "." << ip_octet2 << "." << first_ip << "." << 1 << endl;
@@ -55,10 +56,10 @@ int main ()
 		broadcast_address = network_address + blocksize - 1;
 		first_ip = network_address + 1;
 		last_ip = broadcast_address - 1;
-		cout << "The network address: " << ip_octet1 << "." << network_address << "." << ip_octet3 << "." << 0 << endl;
-		cout << "The broadcast address: " << ip_octet1 << "." << broadcast_address << "." << ip_octet3 << "." << 255 << endl;
-		cout << "The first usable ip: " << ip_octet1 << "." << first_ip << "." << ip_octet3 << "." << 1 << endl;
-		cout << "The last usable ip: " << ip_octet1 << "." << last_ip << "." << ip_octet3 << "."  << 254 << endl;
+		cout << "The network address: " << ip_octet1 << "." << network_address << "." << 0 << "." << 0 << endl;
+		cout << "The broadcast address: " << ip_octet1 << "." << broadcast_address << "." << 255 << "." << 255 << endl;
+		cout << "The first usable ip: " << ip_octet1 << "." << first_ip << "." << 0 << "." << 1 << endl;
+		cout << "The last usable ip: " << ip_octet1 << "." << last_ip << "." << 255 << "."  << 254 << endl;
 	}
 	else
 		blocksize = 256 - sub_octet1;
@@ -71,13 +72,15 @@ int main ()
 	
 	
 	//slash notation calculation
+	//swtch statment - http://www.controltechnology.com/Files/common-documents/application_notes/CIDR-Notation-Tutorial
 	
 	
 	//we will need a statment to subtract the left over subnet from the same ip octet to get the block size
 	
 	//we can use the block size to find the first and last ip address
 	
-	
+	cin.get();
+	return 0;
 	
 	
 	
